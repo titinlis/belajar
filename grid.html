@@ -1,62 +1,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            width: 980px;
-            height: 100%;
-        }
-        center {
-            color: #fff;
-            font-size: 3em;
-            font-weight: 700;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        header {
-            width: auto;
-            height: 140px;
-            background-color: #0d7962;
-            margin-bottom: 15px;
-        }
-         .container {
-            width: auto;
-            height: 450px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .container .sidebar {
-            width: 270px;
-            height: auto;
-            background-color: #0d7962;
-            margin-right: 15px;
-        }
-        .container.content{
-            width: 690px;
-            height: auto;
-            background-color:#0d7962 ;
-        }
-        footer{
-            width: auto;
-            height: 70px;
-            background-color: #0d7962;
+        .container {
+            background-color: aquamarine;
+            width: 600px;
+            height: 600px;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header><center>Header 1</center></header>
-    <div class="container">
-        <div class="sidebar"><center>Siderbar</center></div>
-        <div class="content"><center>Content</center></div>
-    </div>
-    <footer><center>Footer</center></footer>
+    <form action="">
+        <div class="container">
+            <div class="form-contain">
+                <label for="username">Username</label>
+                <input type="text" id="username" value="abc123">
+            </div>
+            <div class="form-contain">
+                <label for="passwd">Password</label>
+                <input type="password" id="passwd" value="abc123">
+            </div>
+            <div class="form-contain">
+                <input type="checkbox" id="btnShowPass">
+                <label for="btnShowPass">Show Password</label>
+            </div>
+            <div class="form-contain">
+                <label for="age">Age</label>
+                <input type="number" id="age" value="20">
+            </div>
+            <div class="form-contain">
+                <label for="date">Date</label>
+                <input type="date" id="date" value="">
+            </div>
+            <div class="form-contain">
+                <label for="datelocal">DateTime Local</label>
+                <input type="datetime-local" id="datelocal" value="">
+            </div>
+            <div class="form-contain">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="">
+            </div>
+            <div class="form-contain">
+                <label for="file">Image</label>
+                <input type="file" id="file" value="">
+            </div>
+            <button type="submit"> SUBMIT</button>
+        </div>
+    </form>
+    <script>
+        $('#btnShowPass').click(function () {
+            if ($('#btnShowPass').is(':checked')) {
+                $('#passwd').attr('type', 'text');
+            } else {
+                $('#passwd').attr('type', 'password');
+            }
+        })
+    </script>
 </body>
 </html>
-
