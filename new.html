@@ -1,0 +1,122 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: 100%;
+        }
+
+        .banner{
+            background-color: #008000;
+            height: 160px;
+            font-size: 3em;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            padding: 15px;
+        }
+        nav {
+            background-color: #333333;
+            height: 60px;
+        }
+        .nav {
+            padding: 5px;
+            margin-right:10px;
+            color: #fff;
+            display:flex;
+            text-align: center;
+        }
+
+        .nav a  {
+            background-color: #333333;
+            color: #fff;
+            border-radius: 5px;
+            margin: 5px;
+            padding:10px; 
+        }
+        
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            border: 1px solid #fff;
+            padding: 15px;
+            margin: 5px;
+            width: 100%;
+            text-align: justify; 
+        }
+      
+        ul {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #008000;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify; 
+            font-size: 1em;
+        }
+
+        footer {
+           justify-content: center;
+            display: flex;
+            padding: 15px;
+        }
+        @media screen and (max-width : 600px){
+            ul,
+            p { 
+                width: 100%;
+            }
+        }
+        @media screen and (max-width : 400px){
+            ul,
+            p { 
+                width: 100%;
+            }
+        }
+
+            
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="Banner">GeeksforGeeks</div>
+    <nav>
+      <div class="nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT US</a> 
+      </div>  
+          
+    </nav>
+    <div class="container">
+        <div class="Card">
+            <ul>Column A</ul>
+            <p>Prepare for the Recruitment drive of product based companies like Microsoft, Amazon, Adobe etc with a free online placement preparation course. The course focuses on various MCQ's & Coding question likely to be asked in the interviws & make your upcoming placement seaseon efficient and successful.</p>
+        </div>
+        <div class="card">
+            <ul>Column B</ul>    
+            <p>Prepare for the Recruitment drive of product based companies like Microsoft, Amazon, Adobe etc with a free online placement preparation course. The course focuses on various MCQ's & Coding question likely to be asked in the interviws & make your upcoming placement seaseon efficient and successful.</p>
+        </div>
+        <div class="card">
+            <ul>Column C</ul>
+            <p>Prepare for the Recruitment drive of product based companies like Microsoft, Amazon, Adobe etc with a free online placement preparation course. The course focuses on various MCQ's & Coding question likely to be asked in the interviws & make your upcoming placement seaseon efficient and successful.</p>
+        </div>
+    </div>
+    <footer>Copy &rigth; 2024 kim soo hyun</footer>
+</body>
+</html>
